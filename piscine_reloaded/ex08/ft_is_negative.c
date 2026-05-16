@@ -5,23 +5,27 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ferde-so <ferde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/02/27 17:18:30 by ferde-so          #+#    #+#             */
-/*   Updated: 2026/03/04 11:14:13 by ferde-so         ###   ########.fr       */
+/*   Created: 2026/05/15 16:20:20 by ferde-so          #+#    #+#             */
+/*   Updated: 2026/05/15 18:55:03 by ferde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
+void	ft_putchar(char c);
+
 void	ft_is_negative(int n)
 {
 	if (n < 0)
-		write(1, "N", 1);
+		ft_putchar('N');
 	else
-		write(1, "P", 1);
+		ft_putchar('P');
 }
 
 /*int	main(void)
 {
 	ft_is_negative(-5);
+	ft_is_negative(0);
+	ft_is_negative(8);
 	return (0);
 }*/

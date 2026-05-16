@@ -5,12 +5,14 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ferde-so <ferde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/02/26 16:20:11 by ferde-so          #+#    #+#             */
-/*   Updated: 2026/03/04 11:01:29 by ferde-so         ###   ########.fr       */
+/*   Created: 2026/05/15 13:57:05 by ferde-so          #+#    #+#             */
+/*   Updated: 2026/05/15 18:54:40 by ferde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
+
+void	ft_putchar(char c);
 
 void	ft_print_alphabet(void)
 {
@@ -19,23 +21,13 @@ void	ft_print_alphabet(void)
 	character = 'a';
 	while (character <= 'z')
 	{
-		write(1, &character, 1);
+		ft_putchar(character);
 		character++;
 	}
 }
 
-/*#include <stdio.h>
-int	main(void)
+/*int	main(void)
 {
-	char	character;
-
-	character = 'a';
 	ft_print_alphabet();
-	printf("\n");
-	while (character <= 'z')
-	{
-		printf("%d,", character);
-		character++;
-	}
 	return (0);
 }*/

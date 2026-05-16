@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ferde-so <ferde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/03/18 10:32:18 by ferde-so          #+#    #+#             */
-/*   Updated: 2026/03/19 10:56:52 by ferde-so         ###   ########.fr       */
+/*   Created: 2026/05/15 16:25:21 by ferde-so          #+#    #+#             */
+/*   Updated: 2026/05/15 17:12:05 by ferde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,7 @@ int	ft_sqrt(int nb)
 {
 	int	value;
 
-	if (nb < 0)
-		return (0);
-	if (nb == 0)
+	if (nb <= 0)
 		return (0);
 	value = 1;
 	while (value * value < nb)

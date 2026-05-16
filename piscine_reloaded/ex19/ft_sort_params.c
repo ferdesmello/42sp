@@ -5,12 +5,14 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ferde-so <ferde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/03/18 10:33:04 by ferde-so          #+#    #+#             */
-/*   Updated: 2026/03/19 11:32:01 by ferde-so         ###   ########.fr       */
+/*   Created: 2026/05/15 16:25:56 by ferde-so          #+#    #+#             */
+/*   Updated: 2026/05/15 19:32:01 by ferde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
+
+void	ft_putchar(char c);
 
 int	ft_strcmp(char *s1, char *s2)
 {
@@ -60,10 +62,10 @@ int	main(int argc, char **argv)
 		j = 0;
 		while (argv[i][j] != '\0')
 		{
-			write(1, &argv[i][j], 1);
+			ft_putchar(argv[i][j]);
 			j++;
 		}
-		write(1, "\n", 1);
+		ft_putchar('\n');
 		i++;
 	}
 	return (0);
