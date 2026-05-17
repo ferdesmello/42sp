@@ -1,2 +1,2 @@
 # 42sp
-Code project for the 42sp course.
+Code projects for the 42sp common core.
