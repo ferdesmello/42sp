@@ -1,0 +1,1 @@
+#define ABS(Value) (((x) < 0) ? -(x) : (x))
