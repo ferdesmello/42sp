@@ -6,7 +6,7 @@
 /*   By: ferde-so <ferde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/15 16:25:10 by ferde-so          #+#    #+#             */
-/*   Updated: 2026/05/15 16:43:01 by ferde-so         ###   ########.fr       */
+/*   Updated: 2026/05/20 16:11:23 by ferde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,10 +30,10 @@ int	ft_iterative_factorial(int nb)
 int	main (void)
 {
 	printf("%d, %d\n", -5, ft_iterative_factorial(-5));
-	printf("%d, %d\n", 0, ft_iterative_factorial(0));
-	printf("%d, %d\n", 1, ft_iterative_factorial(1));
-	printf("%d, %d\n", 4, ft_iterative_factorial(4));
-	printf("%d, %d\n", 6, ft_iterative_factorial(6));
-	printf("%d, %d\n", 9, ft_iterative_factorial(9));
+	printf(" %d, %d\n", 0, ft_iterative_factorial(0));
+	printf(" %d, %d\n", 1, ft_iterative_factorial(1));
+	printf(" %d, %d\n", 4, ft_iterative_factorial(4));
+	printf(" %d, %d\n", 6, ft_iterative_factorial(6));
+	printf(" %d, %d\n", 9, ft_iterative_factorial(9));
 	return (0);
 }*/

@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_count_if.c                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ferde-so <ferde-so@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/05/20 14:35:17 by ferde-so          #+#    #+#             */
+/*   Updated: 2026/05/20 15:12:18 by ferde-so         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 /*#include <unistd.h>
 
 void ft_putchar(char c)
@@ -42,14 +54,14 @@ int test(char *str)
 	return (0);
 }*/
 
-int ft_count_if(char **tab, int (*f)(char*))
+int	ft_count_if(char **tab, int (*f)(char*))
 {
 	int	i;
 	int	count;
 
 	i = 0;
 	count = 0;
-	while (tab[i] != NULL)
+	while (tab[i] != 0)
 	{
 		if (f(tab[i]) == 1)
 		{
@@ -71,7 +83,7 @@ int ft_count_if(char **tab, int (*f)(char*))
     lines[2] = "3";
     lines[3] = "40";
     lines[4] = "5";
-    lines[5] = NULL;
+    lines[5] = 0;
 	tab = lines;
 	count = ft_count_if(tab, &test);
 	ft_putnbr(count);
