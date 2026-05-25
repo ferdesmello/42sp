@@ -1,0 +1,47 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ferde-so <ferde-so@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/05/25 10:45:13 by ferde-so          #+#    #+#             */
+/*   Updated: 2026/05/25 16:51:25 by ferde-so         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+char	*ft_strrchr(const char *str, int c)
+{
+	unsigned int	i;
+	char			*final_position;
+
+	i = 0;
+	final_position = 0;
+	while (str[i] != '\0')
+	{
+		if (str[i] == c)
+		{
+			final_position = (char *)&str[i];
+		}
+		i++;
+	}
+	return (final_position);
+}
+
+/*#include <stdio.h>
+#include <string.h>
+
+int	main(void)
+{
+	char	string[] = "abcdef ABCDEF 12 abcdef ABCDEF 12";
+	printf("%c, %p\n", 'a', strrchr(string, 'a'));
+	printf("%c, %p\n", 'a', ft_strrchr(string, 'a'));
+	printf("%c, %p\n", 'F', strrchr(string, 'F'));
+	printf("%c, %p\n", 'F', ft_strrchr(string, 'F'));
+	printf("%c, %p\n", '3', strrchr(string, '3'));
+	printf("%c, %p\n", '3', ft_strrchr(string, '3'));
+	printf("%c, %p\n", '!', strrchr(string, '!'));
+	printf("%c, %p\n", '!', ft_strrchr(string, '!'));
+	
+	return (0);
+}*/
