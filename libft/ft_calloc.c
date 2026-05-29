@@ -1,9 +1,21 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_calloc.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ferde-so <ferde-so@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/05/29 12:48:14 by ferde-so          #+#    #+#             */
+/*   Updated: 2026/05/29 12:56:34 by ferde-so         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <stdlib.h>
 
-void *ft_calloc(unsigned int num, unsigned int size)
+void	*ft_calloc(unsigned int num, size_t size)
 {
-	void		*ptr;
-	unsigned int i;
+	void			*ptr;
+	unsigned int	i;
 
 	ptr = malloc(num * size);
 	if (ptr == 0)

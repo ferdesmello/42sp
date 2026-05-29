@@ -6,11 +6,11 @@
 /*   By: ferde-so <ferde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/25 10:45:05 by ferde-so          #+#    #+#             */
-/*   Updated: 2026/05/25 16:38:58 by ferde-so         ###   ########.fr       */
+/*   Updated: 2026/05/29 17:07:38 by ferde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-unsigned int	ft_strlen(char *str)
+unsigned int	ft_strlen(const char *str)
 {
 	unsigned int	len;
 

@@ -1,15 +1,27 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ferde-so <ferde-so@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/05/29 12:48:25 by ferde-so          #+#    #+#             */
+/*   Updated: 2026/05/29 18:49:37 by ferde-so         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <stdlib.h>
 
-void *ft_strdup(const char *src)
+void	*ft_strdup(const char *src)
 {
-	void		*dest;
-	unsigned int i;
-	unsigned int len;
+	void	*dest;
+	size_t	i;
+	size_t	len;
 
 	len = 0;
 	while (src[len] != '\0')
 		len++;
-	dest = malloc(len + 1);
+	dest = malloc(sizeof(char *)*(len + 1));
 	if (dest == 0)
 		return (0);
 	i = 0;
@@ -23,7 +35,6 @@ void *ft_strdup(const char *src)
 }
 
 /*#include <stdio.h>
-#include <string.h>
 
 int main(void) {
     const char *src = "Hello world!";
