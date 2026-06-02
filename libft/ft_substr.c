@@ -6,7 +6,7 @@
 /*   By: ferde-so <ferde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/29 12:43:14 by ferde-so          #+#    #+#             */
-/*   Updated: 2026/05/29 14:29:42 by ferde-so         ###   ########.fr       */
+/*   Updated: 2026/06/01 16:14:45 by ferde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 
 /*#include <stdio.h>
 
-int main()
+int main(void)
 {
 	char *substring;
     char str[100] = "Sera que Sao Paulo sempre foi Sao Paulo?";

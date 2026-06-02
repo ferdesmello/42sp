@@ -6,7 +6,7 @@
 /*   By: ferde-so <ferde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/29 17:27:51 by ferde-so          #+#    #+#             */
-/*   Updated: 2026/05/29 19:36:30 by ferde-so         ###   ########.fr       */
+/*   Updated: 2026/06/01 16:16:10 by ferde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 int	ft_count_pieces(const char *s, char c)
 {
 	int	i;
-	int pieces;
+	int	pieces;
 
 	i = 0;
 	pieces = 0;
@@ -33,7 +33,7 @@ char	*ft_str_copy_se(const char *src, int start, int end)
 	char	*dest;
 	int		i;
 
-	dest = malloc(sizeof(char)*(end - start + 1));
+	dest = malloc(sizeof(char) * (end - start + 1));
 	if (dest == 0)
 		return (0);
 	i = 0;
@@ -49,10 +49,10 @@ char	*ft_str_copy_se(const char *src, int start, int end)
 
 char	**ft_split(char const *s, char c)
 {
-	char **splitted;
-	size_t index;
-	size_t start;
-	size_t i;
+	char	**splitted;
+	size_t	index;
+	size_t	start;
+	size_t	i;
 
 	splitted = malloc((ft_count_pieces(s, c) + 1) * sizeof(char *));
 	if (s == 0 || splitted == 0)
@@ -72,14 +72,14 @@ char	**ft_split(char const *s, char c)
 		else
 			i++;
 	}
-    splitted[index] = 0;
+	splitted[index] = 0;
 	return (splitted);
 }
 
 /*#include <stdio.h>
 
-int main() {
-	
+int main(void)
+{
 	int i;
 	int size;
     char text[] = "abracadabra";

@@ -6,7 +6,7 @@
 /*   By: ferde-so <ferde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/25 10:45:11 by ferde-so          #+#    #+#             */
-/*   Updated: 2026/05/25 16:50:22 by ferde-so         ###   ########.fr       */
+/*   Updated: 2026/06/01 16:15:07 by ferde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ char	*ft_strnstr(const char *haystack, const char *needle, unsigned int len)
 #include <bsd/string.h>
 // add the flag -lbsd  in the compilation
 
-int main()
+int main(void)
 {
     char str[100] = 
 	"Será que São Paulo foi sempre São Paulo ou isso 

@@ -6,7 +6,7 @@
 /*   By: ferde-so <ferde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/29 12:48:14 by ferde-so          #+#    #+#             */
-/*   Updated: 2026/05/29 12:56:34 by ferde-so         ###   ########.fr       */
+/*   Updated: 2026/06/01 16:17:20 by ferde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ void	*ft_calloc(unsigned int num, size_t size)
 
 /*#include <stdio.h>
 
-int main (void)
+int main(void)
 {
     int *ptr;
     int n = 5;

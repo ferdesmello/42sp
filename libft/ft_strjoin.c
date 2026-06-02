@@ -6,7 +6,7 @@
 /*   By: ferde-so <ferde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/29 13:59:22 by ferde-so          #+#    #+#             */
-/*   Updated: 2026/05/29 14:30:20 by ferde-so         ###   ########.fr       */
+/*   Updated: 2026/06/01 16:15:38 by ferde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 
 /*#include <stdio.h>
 
-int main()
+int main(void)
 {
 	char *newstring;
     char str1[100] = "Sera que Sao Paulo";

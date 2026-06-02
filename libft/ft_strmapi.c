@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strmapi.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ferde-so <ferde-so@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/06/01 14:06:22 by ferde-so          #+#    #+#             */
+/*   Updated: 2026/06/01 16:15:14 by ferde-so         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 /*#include <unistd.h>
 
 void ft_putchar(char c)
@@ -27,7 +39,7 @@ unsigned int	ft_strlen(const char *str)
 
 #include <stdlib.h>
 
-char *ft_strmapi(char const *s, char (*f)(unsigned int, char))
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	char			*new_s;
 	unsigned int	i;
@@ -47,7 +59,7 @@ char *ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	return (new_s);
 }
 
-/*int main (void)
+/*int main(void)
 {
 	char *array;
 	//char *new_array;

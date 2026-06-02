@@ -6,7 +6,7 @@
 /*   By: ferde-so <ferde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/25 10:44:33 by ferde-so          #+#    #+#             */
-/*   Updated: 2026/05/25 16:42:04 by ferde-so         ###   ########.fr       */
+/*   Updated: 2026/06/01 16:17:27 by ferde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ int	ft_atoi(char *str)
 /*#include <stdlib.h>
 #include <stdio.h>
 
-int main (void)
+int main(void)
 {
 	printf("'%s'\n'%d'\n'%d'\n\n", "1234567890", 
 		atoi("1234567890"), ft_atoi("1234567890"));

@@ -6,7 +6,7 @@
 /*   By: ferde-so <ferde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/25 10:44:53 by ferde-so          #+#    #+#             */
-/*   Updated: 2026/05/25 16:49:10 by ferde-so         ###   ########.fr       */
+/*   Updated: 2026/06/01 16:16:28 by ferde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ void	*ft_memset(void *dest, int c, unsigned int n)
 #include <stdio.h>
 
 // ‘size_t’ is defined in header ‘<stddef.h>’
-int main (void)
+int main(void)
 {
 	char	string1[] = "abcdefghijklmnopqrstuvwxyz";
 	char	string2[] = "abcdefghijklmnopqrstuvwxyz";

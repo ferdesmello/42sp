@@ -6,7 +6,7 @@
 /*   By: ferde-so <ferde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/25 10:43:58 by ferde-so          #+#    #+#             */
-/*   Updated: 2026/05/25 16:43:09 by ferde-so         ###   ########.fr       */
+/*   Updated: 2026/06/01 16:17:23 by ferde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ void	*ft_bzero(void *dest, unsigned int n)
 #include <stdio.h>
 
 // ‘size_t’ is defined in header ‘<stddef.h>’
-int main (void)
+int main(void)
 {
 	char	string1[] = "abcdefghijklmnopqrstuvwxyz";
 	char	string2[] = "abcdefghijklmnopqrstuvwxyz";

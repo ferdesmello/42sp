@@ -6,7 +6,7 @@
 /*   By: ferde-so <ferde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/29 14:15:50 by ferde-so          #+#    #+#             */
-/*   Updated: 2026/05/29 17:26:03 by ferde-so         ###   ########.fr       */
+/*   Updated: 2026/06/01 16:14:49 by ferde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ unsigned int	ft_strlen(const char *str)
 
 int	ft_char_in_set(const char c, const char *set)
 {
-	size_t i;
+	size_t	i;
 
 	i = 0;
 	while (set[i] != '\0')
@@ -62,14 +62,14 @@ char	*ft_strtrim(char const *s1, char const *set)
 	size_t	start;
 	size_t	end;
 	char	*new_s;
-	
+
 	start = 0;
 	while (s1[start] != '\0' && ft_char_in_set(s1[start], set))
 		start++;
 	end = ft_strlen(s1);
 	while (end > start && ft_char_in_set(s1[end - 1], set))
 		end--;
-	new_s = malloc(sizeof(char)*(end - start + 1));
+	new_s = malloc(sizeof(char) * (end - start + 1));
 	if (new_s == 0)
 		return (0);
 	ft_strlcpy(new_s, &s1[start], end - start + 1);
@@ -78,7 +78,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 
 /*#include <stdio.h>
 
-int main() {
+int main(void) {
     char text1[] = "...!!! Hello, World !!!...";
 	char set1[] = ".! ";
 	char *s_trim1;

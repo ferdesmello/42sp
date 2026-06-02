@@ -6,7 +6,7 @@
 /*   By: ferde-so <ferde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/25 10:44:45 by ferde-so          #+#    #+#             */
-/*   Updated: 2026/05/25 16:57:08 by ferde-so         ###   ########.fr       */
+/*   Updated: 2026/06/01 16:16:39 by ferde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ unsigned int ft_strlen(char *str)
 }
 
 // ‘size_t’ is defined in header ‘<stddef.h>’
-int main (void)
+int main(void)
 {
 	char	src1[] = "abcdefghijklmnopqrstuvwxyz";
 	char	src2[] = "aaaaaaaaaa";

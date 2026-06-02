@@ -6,7 +6,7 @@
 /*   By: ferde-so <ferde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/25 10:44:16 by ferde-so          #+#    #+#             */
-/*   Updated: 2026/05/25 16:37:57 by ferde-so         ###   ########.fr       */
+/*   Updated: 2026/06/01 16:17:09 by ferde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int	ft_isdigit(int c)
 /*#include <ctype.h>
 #include <stdio.h>
 
-int main (void)
+int main(void)
 {
 	printf("%c, %d, %d\n", '0', isdigit('0'), ft_isdigit('0'));
 	printf("%c, %d, %d\n", '9', isdigit('9'), ft_isdigit('9'));

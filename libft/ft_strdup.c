@@ -6,7 +6,7 @@
 /*   By: ferde-so <ferde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/29 12:48:25 by ferde-so          #+#    #+#             */
-/*   Updated: 2026/05/29 18:49:37 by ferde-so         ###   ########.fr       */
+/*   Updated: 2026/06/01 23:10:02 by ferde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	*ft_strdup(const char *src)
 	len = 0;
 	while (src[len] != '\0')
 		len++;
-	dest = malloc(sizeof(char *)*(len + 1));
+	dest = malloc(sizeof(char) * (len + 1));
 	if (dest == 0)
 		return (0);
 	i = 0;
@@ -36,7 +36,8 @@ void	*ft_strdup(const char *src)
 
 /*#include <stdio.h>
 
-int main(void) {
+int main(void)
+{
     const char *src = "Hello world!";
     char *dest = ft_strdup(src);
 
