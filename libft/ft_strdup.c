@@ -6,13 +6,13 @@
 /*   By: ferde-so <ferde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/29 12:48:25 by ferde-so          #+#    #+#             */
-/*   Updated: 2026/06/01 23:10:02 by ferde-so         ###   ########.fr       */
+/*   Updated: 2026/06/03 14:44:07 by ferde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
-void	*ft_strdup(const char *src)
+char	*ft_strdup(const char *src)
 {
 	void	*dest;
 	size_t	i;

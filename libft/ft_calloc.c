@@ -6,24 +6,26 @@
 /*   By: ferde-so <ferde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/29 12:48:14 by ferde-so          #+#    #+#             */
-/*   Updated: 2026/06/03 01:07:44 by ferde-so         ###   ########.fr       */
+/*   Updated: 2026/06/03 16:57:11 by ferde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
-void	*ft_calloc(size_t num, size_t size)
+void	*ft_calloc(size_t n, size_t size)
 {
 	void	*ptr;
 	size_t	i;
 
-	if (num == 0 || size == 0)
-		return (malloc(1));
-	ptr = malloc(num * size);
+	//if (n == 0 || size == 0)
+		//return (malloc(1));
+	if (n != 0 && size > sizeof(size_t) / n)
+		return (NULL);
+	ptr = malloc(n * size);
 	if (ptr == 0)
-		return (0);
+		return (NULL);
 	i = 0;
-	while (i < num * size)
+	while (i < n * size)
 	{
 		((char *)ptr)[i] = 0;
 		i++;

@@ -6,33 +6,31 @@
 /*   By: ferde-so <ferde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/25 10:45:11 by ferde-so          #+#    #+#             */
-/*   Updated: 2026/06/03 01:42:09 by ferde-so         ###   ########.fr       */
+/*   Updated: 2026/06/03 16:28:13 by ferde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "libft.h"
 
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
 	size_t	i;
 	size_t	j;
-	char	*position;
 
 	if (*needle == '\0')
 		return ((char *)haystack);
 	i = 0;
-	while (i < len)
+	while (haystack[i] != '\0' && i < len)
 	{
 		j = 0;
-		position = (char *)&haystack[i];
-		while (needle[j] != '\0')
+		while (needle[j] != '\0' && i + j < len)
 		{
 			if (haystack[i + j] != needle[j])
 				break ;
 			j++;
 		}
 		if (needle[j] == '\0')
-			return (position);
+			return ((char *)&haystack[i]);
 		i++;
 	}
 	return (NULL);

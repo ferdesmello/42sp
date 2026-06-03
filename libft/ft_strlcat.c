@@ -6,11 +6,11 @@
 /*   By: ferde-so <ferde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/25 10:44:59 by ferde-so          #+#    #+#             */
-/*   Updated: 2026/06/03 01:59:49 by ferde-so         ###   ########.fr       */
+/*   Updated: 2026/06/03 14:44:23 by ferde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-# include <stdlib.h>
+#include "libft.h"
 
 size_t	ft_strlcat(char *dest, const char *src, size_t size)
 {

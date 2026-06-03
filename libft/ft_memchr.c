@@ -6,11 +6,11 @@
 /*   By: ferde-so <ferde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/25 10:44:30 by ferde-so          #+#    #+#             */
-/*   Updated: 2026/06/03 01:21:28 by ferde-so         ###   ########.fr       */
+/*   Updated: 2026/06/03 14:43:35 by ferde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "libft.h"
 
 void	*ft_memchr(const void *str, int c, size_t n)
 {

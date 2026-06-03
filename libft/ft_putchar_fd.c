@@ -6,11 +6,11 @@
 /*   By: ferde-so <ferde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/01 14:05:40 by ferde-so          #+#    #+#             */
-/*   Updated: 2026/06/01 16:01:36 by ferde-so         ###   ########.fr       */
+/*   Updated: 2026/06/03 14:43:48 by ferde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "libft.h"
 
 void	ft_putchar_fd(char c, int fd)
 {

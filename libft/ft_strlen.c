@@ -6,11 +6,11 @@
 /*   By: ferde-so <ferde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/25 10:45:05 by ferde-so          #+#    #+#             */
-/*   Updated: 2026/06/03 01:40:07 by ferde-so         ###   ########.fr       */
+/*   Updated: 2026/06/03 14:44:28 by ferde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "libft.h"
 
 size_t	ft_strlen(const char *str)
 {

@@ -6,17 +6,17 @@
 /*   By: ferde-so <ferde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/01 14:16:29 by ferde-so          #+#    #+#             */
-/*   Updated: 2026/06/01 16:14:32 by ferde-so         ###   ########.fr       */
+/*   Updated: 2026/06/03 14:43:31 by ferde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
-typedef struct s_list
+/*typedef struct s_list
 {
 	void			*content;
 	struct s_list	*next;
-}	t_list;
+}	t_list;*/
 
 t_list	*ft_lstnew(void *content)
 {

@@ -6,14 +6,14 @@
 /*   By: ferde-so <ferde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/29 17:27:51 by ferde-so          #+#    #+#             */
-/*   Updated: 2026/06/03 01:35:25 by ferde-so         ###   ########.fr       */
+/*   Updated: 2026/06/03 14:46:14 by ferde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 // create free all if some array fails and use pointers
-#include <stdlib.h>
 
-int	ft_count_pieces(const char *s, char c)
+static int	ft_count_pieces(const char *s, char c)
 {
 	int	i;
 	int	pieces;
@@ -29,7 +29,7 @@ int	ft_count_pieces(const char *s, char c)
 	return (pieces);
 }
 
-char	*ft_str_copy_se(const char *src, int start, int end)
+static char	*ft_str_copy_se(const char *src, int start, int end)
 {
 	char	*dest;
 	int		i;

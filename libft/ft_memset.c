@@ -6,11 +6,11 @@
 /*   By: ferde-so <ferde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/25 10:44:53 by ferde-so          #+#    #+#             */
-/*   Updated: 2026/06/03 01:29:35 by ferde-so         ###   ########.fr       */
+/*   Updated: 2026/06/03 14:43:46 by ferde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "libft.h"
 
 void	*ft_memset(void *dest, int c, size_t n)
 {

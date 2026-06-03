@@ -6,25 +6,29 @@
 /*   By: ferde-so <ferde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/25 10:44:56 by ferde-so          #+#    #+#             */
-/*   Updated: 2026/06/03 01:36:16 by ferde-so         ###   ########.fr       */
+/*   Updated: 2026/06/03 16:06:43 by ferde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "libft.h"
 
 char	*ft_strchr(const char *str, int c)
 {
 	unsigned int	i;
+	char			char_c;
 
+	char_c = (char)c;
 	i = 0;
 	while (str[i] != '\0')
 	{
-		if (str[i] == c)
+		if (str[i] == char_c)
 		{
 			return ((char *)&str[i]);
 		}
 		i++;
 	}
+	if (str[i] == char_c)
+		return ((char *)&str[i]);
 	return (NULL);
 }
 

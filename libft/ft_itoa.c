@@ -6,13 +6,13 @@
 /*   By: ferde-so <ferde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/29 19:38:55 by ferde-so          #+#    #+#             */
-/*   Updated: 2026/06/03 01:17:58 by ferde-so         ###   ########.fr       */
+/*   Updated: 2026/06/03 14:47:53 by ferde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
-int	len_int(int n)
+static int	len_int(int n)
 {
 	int	len;
 

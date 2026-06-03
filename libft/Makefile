@@ -3,7 +3,7 @@ CC = cc
 CFLAGS = -Wall -Wextra -Werror
 
 # Final binary
-TARGET = libft.a
+NAME = libft.a
 
 # Source objects
 SRCS = ft_atoi.c \
@@ -53,24 +53,24 @@ ft_toupper.c
 OBJS = $(SRCS:.c=.o)
 
 # Default target
-all: $(TARGET)
+all: $(NAME)
 
 # Linking
-$(TARGET): $(OBJS)
-	$(CC) $(CFLAGS) $(OBJS) -o $(TARGET)
+$(NAME): $(OBJS)
+	ar rcs $(NAME) $(OBJS) 
 
 # Compilation
 %.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@
-
-# Protected words
-.PHONY: all clean fclean re
 
 # Commands
 clean:
 	rm -f $(OBJS)
 
 fclean: clean
-	rm -f $(TARGET)
+	rm -f $(NAME)
 
 re: fclean all
+
+# Protected words
+.PHONY: all clean fclean re

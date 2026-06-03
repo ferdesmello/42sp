@@ -6,13 +6,13 @@
 /*   By: ferde-so <ferde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/01 14:06:06 by ferde-so          #+#    #+#             */
-/*   Updated: 2026/06/03 01:37:26 by ferde-so         ###   ########.fr       */
+/*   Updated: 2026/06/03 14:44:20 by ferde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*#include <unistd.h>
+#include "libft.h"
 
-void	ft_putchar(char c)
+/*void	ft_putchar(char c)
 {
 	write(1, &c, 1);
 }

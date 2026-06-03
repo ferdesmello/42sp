@@ -6,23 +6,24 @@
 /*   By: ferde-so <ferde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/25 10:43:58 by ferde-so          #+#    #+#             */
-/*   Updated: 2026/06/03 01:02:34 by ferde-so         ###   ########.fr       */
+/*   Updated: 2026/06/03 15:44:26 by ferde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "libft.h"
 
-void	*ft_bzero(void *dest, size_t n)
+void	ft_bzero(void *s, size_t n)
 {
 	size_t	i;
+	unsigned char	*ptr;
 
+	ptr = s;
 	i = 0;
 	while (i < n)
 	{
-		((size_t *)dest)[i] = 0;
+		ptr[i] = 0;
 		i++;
 	}
-	return (dest);
 }
 
 /*size_t	ft_strlen(char *str)

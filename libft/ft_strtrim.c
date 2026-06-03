@@ -6,13 +6,13 @@
 /*   By: ferde-so <ferde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/29 14:15:50 by ferde-so          #+#    #+#             */
-/*   Updated: 2026/06/03 01:45:50 by ferde-so         ###   ########.fr       */
+/*   Updated: 2026/06/03 14:45:33 by ferde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
-unsigned int	ft_strlen(const char *str)
+/*unsigned int	ft_strlen(const char *str)
 {
 	unsigned int	len;
 
@@ -20,9 +20,9 @@ unsigned int	ft_strlen(const char *str)
 	while (str[len] != '\0')
 		len++;
 	return (len);
-}
+}*/
 
-int	ft_char_in_set(const char c, const char *set)
+static int	ft_char_in_set(const char c, const char *set)
 {
 	size_t	i;
 
@@ -36,7 +36,7 @@ int	ft_char_in_set(const char c, const char *set)
 	return (0);
 }
 
-unsigned int	ft_strlcpy(char *dest, const char *src, unsigned int size)
+/*unsigned int	ft_strlcpy(char *dest, const char *src, unsigned int size)
 {
 	unsigned int	i;
 
@@ -55,7 +55,7 @@ unsigned int	ft_strlcpy(char *dest, const char *src, unsigned int size)
 	while (src[i] != '\0')
 		i++;
 	return (i);
-}
+}*/
 
 char	*ft_strtrim(char const *s1, char const *set)
 {

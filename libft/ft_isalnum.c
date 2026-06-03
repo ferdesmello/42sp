@@ -6,11 +6,13 @@
 /*   By: ferde-so <ferde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/25 10:44:02 by ferde-so          #+#    #+#             */
-/*   Updated: 2026/06/01 16:17:17 by ferde-so         ###   ########.fr       */
+/*   Updated: 2026/06/03 14:33:13 by ferde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalpha(int c)
+#include "libft.h"
+
+/*int	ft_isalpha(int c)
 {
 	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
 		return (1);
@@ -24,7 +26,7 @@ int	ft_isdigit(int c)
 		return (1);
 	else
 		return (0);
-}
+}*/
 
 int	ft_isalnum(int c)
 {

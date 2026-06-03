@@ -6,13 +6,13 @@
 /*   By: ferde-so <ferde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/29 13:59:22 by ferde-so          #+#    #+#             */
-/*   Updated: 2026/06/01 16:15:38 by ferde-so         ###   ########.fr       */
+/*   Updated: 2026/06/03 14:44:15 by ferde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
-unsigned int	ft_strlen(char *str)
+/*unsigned int	ft_strlen(char *str)
 {
 	unsigned int	len;
 
@@ -20,7 +20,7 @@ unsigned int	ft_strlen(char *str)
 	while (str[len] != '\0')
 		len++;
 	return (len);
-}
+}*/
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
