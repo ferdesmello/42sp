@@ -6,11 +6,26 @@
 /*   By: ferde-so <ferde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/25 10:44:53 by ferde-so          #+#    #+#             */
-/*   Updated: 2026/06/01 16:16:28 by ferde-so         ###   ########.fr       */
+/*   Updated: 2026/06/03 01:29:35 by ferde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-unsigned int	ft_strlen(char *str)
+#include <unistd.h>
+
+void	*ft_memset(void *dest, int c, size_t n)
+{
+	size_t			i;
+
+	i = 0;
+	while (i < n)
+	{
+		((unsigned char *)dest)[i] = (unsigned char)c;
+		i++;
+	}
+	return (dest);
+}
+
+/*unsigned int	ft_strlen(char *str)
 {
 	unsigned int	len;
 
@@ -20,22 +35,7 @@ unsigned int	ft_strlen(char *str)
 	return (len);
 }
 
-void	*ft_memset(void *dest, int c, unsigned int n)
-{
-	unsigned char	value;
-	unsigned int	i;
-
-	value = c;
-	i = 0;
-	while (i < n)
-	{
-		((unsigned char *)dest)[i] = value;
-		i++;
-	}
-	return (dest);
-}
-
-/*#include <string.h>
+#include <string.h>
 #include <stdio.h>
 
 // ‘size_t’ is defined in header ‘<stddef.h>’

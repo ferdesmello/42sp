@@ -6,13 +6,15 @@
 /*   By: ferde-so <ferde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/25 10:44:30 by ferde-so          #+#    #+#             */
-/*   Updated: 2026/05/25 16:51:56 by ferde-so         ###   ########.fr       */
+/*   Updated: 2026/06/03 01:21:28 by ferde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	*ft_memchr(const void *str, int c, unsigned int n)
+#include <unistd.h>
+
+void	*ft_memchr(const void *str, int c, size_t n)
 {
-	unsigned int	i;
+	size_t	i;
 	unsigned char	*position;
 
 	i = 0;
@@ -26,7 +28,7 @@ void	*ft_memchr(const void *str, int c, unsigned int n)
 		position++;
 		i++;
 	}
-	return (0);
+	return (NULL);
 }
 
 /*#include <string.h>

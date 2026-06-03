@@ -32,7 +32,7 @@ void	ft_lstiter(t_list *lst, void (*f)(void *))
 		return ;
 	while (lst != 0)
 	{
-		f(lst->content);
+		f(lst->content); // não seria (*f)(lst->content) ?
 		lst = lst->next;
 	}
 }

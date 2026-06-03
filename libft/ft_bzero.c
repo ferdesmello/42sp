@@ -6,34 +6,36 @@
 /*   By: ferde-so <ferde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/25 10:43:58 by ferde-so          #+#    #+#             */
-/*   Updated: 2026/06/01 16:17:23 by ferde-so         ###   ########.fr       */
+/*   Updated: 2026/06/03 01:02:34 by ferde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-unsigned int	ft_strlen(char *str)
+#include <unistd.h>
+
+void	*ft_bzero(void *dest, size_t n)
 {
-	unsigned int	len;
+	size_t	i;
+
+	i = 0;
+	while (i < n)
+	{
+		((size_t *)dest)[i] = 0;
+		i++;
+	}
+	return (dest);
+}
+
+/*size_t	ft_strlen(char *str)
+{
+	size_t	len;
 
 	len = 0;
 	while (str[len] != '\0')
 		len++;
 	return (len);
 }
-
-void	*ft_bzero(void *dest, unsigned int n)
-{
-	unsigned int	i;
-
-	i = 0;
-	while (i < n)
-	{
-		((unsigned char *)dest)[i] = 0;
-		i++;
-	}
-	return (dest);
-}
-
-/*#include <string.h>
+	
+#include <string.h>
 #include <stdio.h>
 
 // ‘size_t’ is defined in header ‘<stddef.h>’

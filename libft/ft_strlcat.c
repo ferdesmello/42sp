@@ -6,15 +6,17 @@
 /*   By: ferde-so <ferde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/25 10:44:59 by ferde-so          #+#    #+#             */
-/*   Updated: 2026/06/01 16:15:32 by ferde-so         ###   ########.fr       */
+/*   Updated: 2026/06/03 01:59:49 by ferde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
+# include <stdlib.h>
+
+size_t	ft_strlcat(char *dest, const char *src, size_t size)
 {
-	unsigned int	src_len;
-	unsigned int	dest_len;
-	unsigned int	i;
+	size_t	src_len;
+	size_t	dest_len;
+	size_t	i;
 
 	dest_len = 0;
 	while (dest[dest_len])

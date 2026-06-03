@@ -6,13 +6,15 @@
 /*   By: ferde-so <ferde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/25 10:45:08 by ferde-so          #+#    #+#             */
-/*   Updated: 2026/05/25 16:39:01 by ferde-so         ###   ########.fr       */
+/*   Updated: 2026/06/03 01:41:19 by ferde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strncmp(char *str1, char *str2, unsigned int n)
+#include <unistd.h>
+
+int	ft_strncmp(char *str1, char *str2, size_t n)
 {
-	unsigned int	i;
+	size_t	i;
 	unsigned char	c1;
 	unsigned char	c2;
 

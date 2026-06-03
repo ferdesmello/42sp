@@ -6,7 +6,7 @@
 /*   By: ferde-so <ferde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/01 16:57:58 by ferde-so          #+#    #+#             */
-/*   Updated: 2026/06/01 17:05:50 by ferde-so         ###   ########.fr       */
+/*   Updated: 2026/06/03 01:51:52 by ferde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ typedef struct s_list
 t_list	*ft_lstlast(t_list *lst)
 {
 	if (lst == 0)
-		return (0);
+		return (NULL);
 	while (lst->next != 0)
 	{
 		lst = lst->next;

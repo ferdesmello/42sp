@@ -6,9 +6,11 @@
 /*   By: ferde-so <ferde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/25 10:45:13 by ferde-so          #+#    #+#             */
-/*   Updated: 2026/05/25 16:51:25 by ferde-so         ###   ########.fr       */
+/*   Updated: 2026/06/03 01:42:51 by ferde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <unistd.h>
 
 char	*ft_strrchr(const char *str, int c)
 {
@@ -16,7 +18,7 @@ char	*ft_strrchr(const char *str, int c)
 	char			*final_position;
 
 	i = 0;
-	final_position = 0;
+	final_position = NULL;
 	while (str[i] != '\0')
 	{
 		if (str[i] == c)

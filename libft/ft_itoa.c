@@ -6,7 +6,7 @@
 /*   By: ferde-so <ferde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/29 19:38:55 by ferde-so          #+#    #+#             */
-/*   Updated: 2026/06/01 15:59:45 by ferde-so         ###   ########.fr       */
+/*   Updated: 2026/06/03 01:17:58 by ferde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ char	*ft_itoa(int n)
 	len = len_int(long_n);
 	str = malloc(sizeof(char) * (len + 1));
 	if (!str)
-		return (0);
+		return (NULL);
 	str[len] = '\0';
 	if (long_n < 0)
 	{

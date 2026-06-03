@@ -6,13 +6,16 @@
 /*   By: ferde-so <ferde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/25 10:44:49 by ferde-so          #+#    #+#             */
-/*   Updated: 2026/06/01 16:16:34 by ferde-so         ###   ########.fr       */
+/*   Updated: 2026/06/03 01:27:46 by ferde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	*ft_memmove(void *dest, const void *src, unsigned int n)
+#include <unistd.h>
+
+// passar para ponteiros e criar variaveis d e s e unsigned char
+void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	unsigned int	i;
+	size_t			i;
 
 	if (dest == src)
 		return (dest);

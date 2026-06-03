@@ -6,11 +6,11 @@
 /*   By: ferde-so <ferde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/25 10:44:33 by ferde-so          #+#    #+#             */
-/*   Updated: 2026/06/01 16:17:27 by ferde-so         ###   ########.fr       */
+/*   Updated: 2026/06/03 00:52:29 by ferde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_atoi(char *str)
+int	ft_atoi(const char *str)
 {
 	int	number;
 	int	i;
@@ -19,7 +19,7 @@ int	ft_atoi(char *str)
 	number = 0;
 	i = 0;
 	sign = 1;
-	while (str[i] == ' ' || str[i] == '0')
+	while ((str[i] >= 9 && str[i] <= 13) || str[i] == ' ')
 		i++;
 	if (str[i] == '+')
 		i++;
@@ -42,16 +42,16 @@ int	ft_atoi(char *str)
 
 int main(void)
 {
-	printf("'%s'\n'%d'\n'%d'\n\n", "1234567890", 
-		atoi("1234567890"), ft_atoi("1234567890"));
+	printf("'%s'\n'%d'\n'%d'\n\n", "1234567890", atoi("1234567890"), ft_atoi("1234567890"));
 	printf("'%s'\n'%d'\n'%d'\n\n", "100023", atoi("100023"), ft_atoi("100023"));
 	printf("'%s'\n'%d'\n'%d'\n\n", "001258", atoi("001258"), ft_atoi("001258"));
 	printf("'%s'\n'%d'\n'%d'\n\n", "-78", atoi("-78"), ft_atoi("-78"));
 	printf("'%s'\n'%d'\n'%d'\n\n", "---2", atoi("---2"), ft_atoi("---2"));
+	printf("'%s'\n'%d'\n'%d'\n\n", "-+2", atoi("-+2"), ft_atoi("-+2"));
+	printf("'%s'\n'%d'\n'%d'\n\n", "+-2", atoi("+-2"), ft_atoi("+-2"));
 	printf("'%s'\n'%d'\n'%d'\n\n", "+555h5", atoi("+555h5"), ft_atoi("+555h5"));
 	printf("'%s'\n'%d'\n'%d'\n\n", "+++3", atoi("+++3"), ft_atoi("+++3"));
 	printf("'%s'\n'%d'\n'%d'\n\n", "adfdf54", atoi("adfdf54"), ft_atoi("adfdf54"));
-	printf("'%s'\n'%d'\n'%d'\n\n", "   5454f", 
-		atoi("   5454f"), ft_atoi("   5454f"));
+	printf("'%s'\n'%d'\n'%d'\n\n", "   5454f", 	atoi("   5454f"), ft_atoi("   5454f"));
 	return 0;
 }*/

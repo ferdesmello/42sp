@@ -6,10 +6,11 @@
 /*   By: ferde-so <ferde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/29 17:27:51 by ferde-so          #+#    #+#             */
-/*   Updated: 2026/06/01 16:16:10 by ferde-so         ###   ########.fr       */
+/*   Updated: 2026/06/03 01:35:25 by ferde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+// create free all if some array fails and use pointers
 #include <stdlib.h>
 
 int	ft_count_pieces(const char *s, char c)

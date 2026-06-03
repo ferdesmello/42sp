@@ -6,9 +6,11 @@
 /*   By: ferde-so <ferde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/25 10:44:56 by ferde-so          #+#    #+#             */
-/*   Updated: 2026/05/25 16:49:54 by ferde-so         ###   ########.fr       */
+/*   Updated: 2026/06/03 01:36:16 by ferde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <unistd.h>
 
 char	*ft_strchr(const char *str, int c)
 {
@@ -23,7 +25,7 @@ char	*ft_strchr(const char *str, int c)
 		}
 		i++;
 	}
-	return (0);
+	return (NULL);
 }
 
 /*#include <stdio.h>

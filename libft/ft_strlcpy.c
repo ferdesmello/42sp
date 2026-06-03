@@ -6,13 +6,15 @@
 /*   By: ferde-so <ferde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/25 10:45:01 by ferde-so          #+#    #+#             */
-/*   Updated: 2026/06/01 16:15:27 by ferde-so         ###   ########.fr       */
+/*   Updated: 2026/06/03 01:39:18 by ferde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-unsigned int	ft_strlcpy(char *dest, const char *src, unsigned int size)
+#include <unistd.h>
+
+size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 {
-	unsigned int	i;
+	size_t	i;
 
 	i = 0;
 	if (size > 0)

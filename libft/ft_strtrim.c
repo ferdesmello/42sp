@@ -6,7 +6,7 @@
 /*   By: ferde-so <ferde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/29 14:15:50 by ferde-so          #+#    #+#             */
-/*   Updated: 2026/06/01 16:14:49 by ferde-so         ###   ########.fr       */
+/*   Updated: 2026/06/03 01:45:50 by ferde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,6 +63,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 	size_t	end;
 	char	*new_s;
 
+	if (!s1 || !set)
+		return (NULL);
 	start = 0;
 	while (s1[start] != '\0' && ft_char_in_set(s1[start], set))
 		start++;
@@ -70,8 +72,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 	while (end > start && ft_char_in_set(s1[end - 1], set))
 		end--;
 	new_s = malloc(sizeof(char) * (end - start + 1));
-	if (new_s == 0)
-		return (0);
+	if (!new_s)
+		return (NULL);
 	ft_strlcpy(new_s, &s1[start], end - start + 1);
 	return (new_s);
 }

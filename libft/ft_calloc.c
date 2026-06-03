@@ -6,17 +6,19 @@
 /*   By: ferde-so <ferde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/29 12:48:14 by ferde-so          #+#    #+#             */
-/*   Updated: 2026/06/01 16:17:20 by ferde-so         ###   ########.fr       */
+/*   Updated: 2026/06/03 01:07:44 by ferde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
-void	*ft_calloc(unsigned int num, size_t size)
+void	*ft_calloc(size_t num, size_t size)
 {
-	void			*ptr;
-	unsigned int	i;
+	void	*ptr;
+	size_t	i;
 
+	if (num == 0 || size == 0)
+		return (malloc(1));
 	ptr = malloc(num * size);
 	if (ptr == 0)
 		return (0);
