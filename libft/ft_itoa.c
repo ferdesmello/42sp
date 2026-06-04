@@ -6,28 +6,30 @@
 /*   By: ferde-so <ferde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/29 19:38:55 by ferde-so          #+#    #+#             */
-/*   Updated: 2026/06/03 14:47:53 by ferde-so         ###   ########.fr       */
+/*   Updated: 2026/06/04 00:01:02 by ferde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	len_int(int n)
+static int	count_digits(int n)
 {
-	int	len;
+	int			count;
+	long int	long_n;
 
-	len = 1;
-	if (n < 0)
+	count = 0;
+	long_n = n;
+	if (n <= 0)
 	{
-		len++;
-		n = -n;
+		count++;
+		long_n = -long_n;
 	}
-	while (n > 9)
+	while (long_n > 0)
 	{
-		n = n / 10;
-		len++;
+		long_n = long_n / 10;
+		count++;
 	}
-	return (len);
+	return (count);
 }
 
 char	*ft_itoa(int n)
@@ -37,7 +39,7 @@ char	*ft_itoa(int n)
 	int			len;
 
 	long_n = n;
-	len = len_int(long_n);
+	len = count_digits(long_n);
 	str = malloc(sizeof(char) * (len + 1));
 	if (!str)
 		return (NULL);
@@ -47,7 +49,9 @@ char	*ft_itoa(int n)
 		str[0] = '-';
 		long_n = -long_n;
 	}
-	while (len > 0)
+	if (long_n == 0)
+		str[0] = '0';
+	while (long_n > 0)
 	{
 		str[len - 1] = (long_n % 10) + '0';
 		long_n = long_n / 10;

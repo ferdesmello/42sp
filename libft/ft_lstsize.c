@@ -6,7 +6,7 @@
 /*   By: ferde-so <ferde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/01 16:51:16 by ferde-so          #+#    #+#             */
-/*   Updated: 2026/06/03 14:43:33 by ferde-so         ###   ########.fr       */
+/*   Updated: 2026/06/04 00:13:23 by ferde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,13 +32,13 @@
 
 int	ft_lstsize(t_list *lst)
 {
-	int		size;
+	int	size;
 
 	size = 0;
 	while (lst != 0)
 	{
-		size++; // deveria ser embaixo?
 		lst = lst->next;
+		size++;
 	}
 	return (size);
 }

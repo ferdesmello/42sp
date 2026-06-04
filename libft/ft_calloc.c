@@ -6,7 +6,7 @@
 /*   By: ferde-so <ferde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/29 12:48:14 by ferde-so          #+#    #+#             */
-/*   Updated: 2026/06/03 16:57:11 by ferde-so         ###   ########.fr       */
+/*   Updated: 2026/06/04 00:14:04 by ferde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,8 @@ void	*ft_calloc(size_t n, size_t size)
 	void	*ptr;
 	size_t	i;
 
-	//if (n == 0 || size == 0)
-		//return (malloc(1));
+	if (n == 0 || size == 0)
+		return (malloc(1));
 	if (n != 0 && size > sizeof(size_t) / n)
 		return (NULL);
 	ptr = malloc(n * size);

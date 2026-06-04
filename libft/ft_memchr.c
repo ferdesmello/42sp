@@ -6,7 +6,7 @@
 /*   By: ferde-so <ferde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/25 10:44:30 by ferde-so          #+#    #+#             */
-/*   Updated: 2026/06/03 14:43:35 by ferde-so         ###   ########.fr       */
+/*   Updated: 2026/06/04 00:09:29 by ferde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_memchr(const void *str, int c, size_t n)
 {
-	size_t	i;
+	size_t			i;
 	unsigned char	*position;
 
 	i = 0;

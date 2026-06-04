@@ -6,7 +6,7 @@
 /*   By: ferde-so <ferde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/03 14:16:47 by ferde-so          #+#    #+#             */
-/*   Updated: 2026/06/03 14:43:21 by ferde-so         ###   ########.fr       */
+/*   Updated: 2026/06/04 00:11:25 by ferde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ void	ft_lstiter(t_list *lst, void (*f)(void *))
 		return ;
 	while (lst != 0)
 	{
-		f(lst->content); // não seria (*f)(lst->content) ?
+		f(lst->content);
 		lst = lst->next;
 	}
 }

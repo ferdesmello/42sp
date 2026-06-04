@@ -6,7 +6,7 @@
 /*   By: ferde-so <ferde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/29 12:43:14 by ferde-so          #+#    #+#             */
-/*   Updated: 2026/06/03 14:44:48 by ferde-so         ###   ########.fr       */
+/*   Updated: 2026/06/04 00:09:05 by ferde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,9 +28,11 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	size_t	s_len;
 	char	*subs;
 
-	s_len = ft_strlen((char *)s);
-	if (start > s_len)
+	if (!s)
 		return (NULL);
+	s_len = ft_strlen(s);
+	if (start > s_len)
+		return (ft_strdup(""));
 	if (start + len > s_len)
 		len = s_len - start;
 	subs = malloc(len + 1);
@@ -42,7 +44,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		subs[i] = s[i + start];
 		i++;
 	}
-	subs[i] = '\0'; //Isso é necessário?
+	subs[i] = '\0';
 	return (subs);
 }
 
