@@ -6,7 +6,7 @@
 /*   By: ferde-so <ferde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/25 10:44:59 by ferde-so          #+#    #+#             */
-/*   Updated: 2026/06/03 14:44:23 by ferde-so         ###   ########.fr       */
+/*   Updated: 2026/06/04 22:43:44 by ferde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,12 +18,8 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size)
 	size_t	dest_len;
 	size_t	i;
 
-	dest_len = 0;
-	while (dest[dest_len])
-		dest_len++;
-	src_len = 0;
-	while (src[src_len])
-		src_len++;
+	src_len = ft_strlen(src);
+	dest_len = ft_strlen(dest);
 	if (size <= dest_len)
 		return (src_len + size);
 	i = 0;

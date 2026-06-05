@@ -6,7 +6,7 @@
 /*   By: ferde-so <ferde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/25 10:45:05 by ferde-so          #+#    #+#             */
-/*   Updated: 2026/06/03 14:44:28 by ferde-so         ###   ########.fr       */
+/*   Updated: 2026/06/04 22:39:07 by ferde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ size_t	ft_strlen(const char *str)
 {
 	size_t	len;
 
+	if (!str)
+		return (0);
 	len = 0;
 	while (str[len] != '\0')
 		len++;

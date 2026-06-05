@@ -6,7 +6,7 @@
 /*   By: ferde-so <ferde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/25 10:43:58 by ferde-so          #+#    #+#             */
-/*   Updated: 2026/06/04 00:12:33 by ferde-so         ###   ########.fr       */
+/*   Updated: 2026/06/04 17:03:36 by ferde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,11 +17,11 @@ void	ft_bzero(void *s, size_t n)
 	size_t			i;
 	unsigned char	*ptr;
 
-	ptr = s;
+	ptr = (unsigned char *)s;
 	i = 0;
 	while (i < n)
 	{
-		ptr[i] = 0;
+		ptr[i] = '\0';
 		i++;
 	}
 }

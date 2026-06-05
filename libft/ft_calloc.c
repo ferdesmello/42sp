@@ -6,28 +6,30 @@
 /*   By: ferde-so <ferde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/29 12:48:14 by ferde-so          #+#    #+#             */
-/*   Updated: 2026/06/04 00:14:04 by ferde-so         ###   ########.fr       */
+/*   Updated: 2026/06/04 23:46:49 by ferde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_calloc(size_t n, size_t size)
+void	*ft_calloc(size_t nmemb, size_t size)
 {
 	void	*ptr;
 	size_t	i;
+	size_t	total_size;
 
-	if (n == 0 || size == 0)
+	total_size = nmemb * size;
+	if (!nmemb || !size)
 		return (malloc(1));
-	if (n != 0 && size > sizeof(size_t) / n)
+	if (nmemb && size != total_size / nmemb)
 		return (NULL);
-	ptr = malloc(n * size);
-	if (ptr == 0)
+	ptr = malloc(total_size);
+	if (!ptr)
 		return (NULL);
 	i = 0;
-	while (i < n * size)
+	while (i < total_size)
 	{
-		((char *)ptr)[i] = 0;
+		((unsigned char *)ptr)[i] = 0;
 		i++;
 	}
 	return (ptr);
@@ -38,9 +40,9 @@ void	*ft_calloc(size_t n, size_t size)
 int main(void)
 {
     int *ptr;
-    int n = 5;
+    int nmemb = 5;
 
-    ptr = ft_calloc(n, sizeof(int));
+    ptr = ft_calloc(nmemb, sizeof(int));
     free(ptr);
     return (0);
 }*/

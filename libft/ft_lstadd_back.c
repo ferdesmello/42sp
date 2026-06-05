@@ -6,7 +6,7 @@
 /*   By: ferde-so <ferde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/01 16:41:03 by ferde-so          #+#    #+#             */
-/*   Updated: 2026/06/03 14:43:11 by ferde-so         ###   ########.fr       */
+/*   Updated: 2026/06/05 00:10:30 by ferde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,13 +36,13 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 
 	if (!lst || !new)
 		return ;
-	if (*lst == 0)
+	if (!*lst)
 	{
 		*lst = new;
 		return ;
 	}
 	last = *lst;
-	while (last->next != 0)
+	while (last->next != NULL)
 	{
 		last = last->next;
 	}
