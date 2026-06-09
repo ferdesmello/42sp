@@ -6,7 +6,7 @@
 /*   By: ferde-so <ferde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/03 14:16:34 by ferde-so          #+#    #+#             */
-/*   Updated: 2026/06/09 03:03:48 by ferde-so         ###   ########.fr       */
+/*   Updated: 2026/06/09 18:06:50 by ferde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,5 +27,5 @@ void	ft_lstclear(t_list **lst, void (*del)(void*))
 		free(current);
 		current = next_node;
 	}
-	*lst = 0;
+	*lst = NULL;
 }

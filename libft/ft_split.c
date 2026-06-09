@@ -6,18 +6,19 @@
 /*   By: ferde-so <ferde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/29 17:27:51 by ferde-so          #+#    #+#             */
-/*   Updated: 2026/06/09 03:05:43 by ferde-so         ###   ########.fr       */
+/*   Updated: 2026/06/09 19:22:12 by ferde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-// create free all if some array fails and use pointers
 
-static int	ft_count_pieces(const char *s, char c)
+static size_t	ft_count_pieces(const char *s, char c)
 {
-	int	i;
-	int	pieces;
+	size_t	i;
+	size_t	pieces;
 
+	if (!s)
+		return (0);
 	i = 0;
 	pieces = 0;
 	while (s[i] != '\0')
@@ -29,18 +30,18 @@ static int	ft_count_pieces(const char *s, char c)
 	return (pieces);
 }
 
-static char	*ft_str_copy_se(const char *src, int start, int end)
+static char	*ft_str_copy_se(const char *start, const char *end)
 {
 	char	*dest;
 	int		i;
 
 	dest = malloc(sizeof(char) * (end - start + 1));
-	if (dest == 0)
+	if (!dest)
 		return (0);
 	i = 0;
 	while (start < end)
 	{
-		dest[i] = src[start];
+		dest[i] = *start;
 		i++;
 		start++;
 	}
@@ -48,31 +49,41 @@ static char	*ft_str_copy_se(const char *src, int start, int end)
 	return (dest);
 }
 
+static void	ft_free_all(char **splitted, int i)
+{
+	while (i > 0)
+	{
+		i--;
+		free(splitted[i]);
+	}
+	free(splitted);
+}
+
 char	**ft_split(char const *s, char c)
 {
-	char	**splitted;
-	size_t	index;
-	size_t	start;
-	size_t	i;
+	char		**splitted;
+	const char	*start;
+	size_t		i;
 
-	splitted = malloc((ft_count_pieces(s, c) + 1) * sizeof(char *));
-	if (s == 0 || splitted == 0)
+	if (!s || !ft_count_pieces(s, c))
+		return (ft_calloc(1, sizeof(char *)));
+	splitted = ft_calloc(ft_count_pieces(s, c) + 1, sizeof(char *));
+	if (!splitted)
 		return (0);
 	i = 0;
-	index = 0;
-	while (s[i] != '\0')
+	while (*s)
 	{
-		if (s[i] != c)
+		if (*s != c)
 		{
-			start = i;
-			while (s[i] != c && s[i] != '\0')
-				i++;
-			splitted[index] = ft_str_copy_se(s, start, i);
-			index++;
+			start = s;
+			while (*s && *s != c)
+				s++;
+			splitted[i] = ft_str_copy_se(start, s);
+			if (!splitted[i++])
+				return (ft_free_all(splitted, i - 1), NULL);
 		}
 		else
-			i++;
+			s++;
 	}
-	splitted[index] = 0;
 	return (splitted);
 }

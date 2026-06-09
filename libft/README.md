@@ -2,7 +2,7 @@
 
 ## Description
 
-`libft` is a custom implementation of a selection of C standard library functions, built to deepen the student's knowledge of pointers, memory management, and string manipulation in C. The goal of this project is to recreate fundamental functions from `<string.h>`, `<stdlib.h>`, and `<unistd.h>` with the same behavior as the original library, and other functions with no direct counterpart in typical C libraries.
+`libft` is a custom implementation of a selection of C standard library functions, built to deepen the student's knowledge of pointers, memory management, and string manipulation in C. The goal of this project is to recreate fundamental functions from `libc` (e.g. headers `<string.h>`, `<stdlib.h>`, and `<unistd.h>`) with the same behavior as the original ones, and other functions with no direct counterpart in `libft`.
 
 This repository includes functions for:
 - character checks and conversions (`ft_isalpha`, `ft_isdigit`, `ft_tolower`, `ft_toupper`, etc.)

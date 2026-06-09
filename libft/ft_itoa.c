@@ -6,27 +6,29 @@
 /*   By: ferde-so <ferde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/29 19:38:55 by ferde-so          #+#    #+#             */
-/*   Updated: 2026/06/09 03:03:10 by ferde-so         ###   ########.fr       */
+/*   Updated: 2026/06/09 17:58:33 by ferde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	count_digits(int n)
+static int	count_digits(long int n)
 {
 	int			count;
-	long int	long_n;
 
 	count = 0;
-	long_n = n;
-	if (n <= 0)
+	if (n < 0)
 	{
 		count++;
-		long_n = -long_n;
+		n = -n;
 	}
-	while (long_n > 0)
+	if (n == 0)
 	{
-		long_n = long_n / 10;
+		return (1);
+	}
+	while (n > 0)
+	{
+		n = n / 10;
 		count++;
 	}
 	return (count);
