@@ -55,13 +55,13 @@ OBJS = $(SRCS:.c=.o)
 # Default target
 all: $(NAME)
 
-# Linking
-$(NAME): $(OBJS)
-	ar rcs $(NAME) $(OBJS) 
-
 # Compilation
 %.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@
+
+# Linking
+$(NAME): $(OBJS)
+	ar rcs $(NAME) $(OBJS) 
 
 # Commands
 clean:

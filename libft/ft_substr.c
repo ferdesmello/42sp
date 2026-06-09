@@ -6,7 +6,7 @@
 /*   By: ferde-so <ferde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/29 12:43:14 by ferde-so          #+#    #+#             */
-/*   Updated: 2026/06/04 00:09:05 by ferde-so         ###   ########.fr       */
+/*   Updated: 2026/06/09 03:06:47 by ferde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,26 +47,3 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	subs[i] = '\0';
 	return (subs);
 }
-
-/*#include <stdio.h>
-
-int main(void)
-{
-	char *substring;
-    char str[100] = "Sera que Sao Paulo sempre foi Sao Paulo?";
-    printf("'%s'\n", str);
-
-	substring = ft_substr(str, 9, 9);
-    printf("'%s'\n", substring);
-	free(substring);
-
-	substring = ft_substr(str, 15, 0);
-    printf("'%s'\n", substring);
-	free(substring);
-
-	substring = ft_substr(str, 0, 100);
-    printf("'%s'\n", substring);
-    free(substring);
-	
-    return (0);
-}*/

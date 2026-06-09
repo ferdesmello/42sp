@@ -6,46 +6,24 @@
 /*   By: ferde-so <ferde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/25 10:44:56 by ferde-so          #+#    #+#             */
-/*   Updated: 2026/06/03 16:06:43 by ferde-so         ###   ########.fr       */
+/*   Updated: 2026/06/09 05:16:51 by ferde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strchr(const char *str, int c)
+char	*ft_strchr(const char *s, int c)
 {
-	unsigned int	i;
-	char			char_c;
+	char	char_c;
 
 	char_c = (char)c;
-	i = 0;
-	while (str[i] != '\0')
+	while (*s != '\0')
 	{
-		if (str[i] == char_c)
-		{
-			return ((char *)&str[i]);
-		}
-		i++;
+		if (*s == char_c)
+			return ((char *)s);
+		s++;
 	}
-	if (str[i] == char_c)
-		return ((char *)&str[i]);
+	if (*s == char_c)
+		return ((char *)s);
 	return (NULL);
 }
-
-/*#include <stdio.h>
-#include <string.h>
-
-int	main(void)
-{
-	char	string[] = "abcdef ABCDEF 12 abcdef ABCDEF 12";
-	printf("%c, %p\n", 'a', strchr(string, 'a'));
-	printf("%c, %p\n", 'a', ft_strchr(string, 'a'));
-	printf("%c, %p\n", 'F', strchr(string, 'F'));
-	printf("%c, %p\n", 'F', ft_strchr(string, 'F'));
-	printf("%c, %p\n", '3', strchr(string, '3'));
-	printf("%c, %p\n", '3', ft_strchr(string, '3'));
-	printf("%c, %p\n", '!', strchr(string, '!'));
-	printf("%c, %p\n", '!', ft_strchr(string, '!'));
-	
-	return (0);
-}*/

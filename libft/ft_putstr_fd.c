@@ -6,7 +6,7 @@
 /*   By: ferde-so <ferde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/01 14:05:55 by ferde-so          #+#    #+#             */
-/*   Updated: 2026/06/03 14:43:55 by ferde-so         ###   ########.fr       */
+/*   Updated: 2026/06/09 03:05:36 by ferde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,19 +25,3 @@ void	ft_putstr_fd(char *s, int fd)
 		i++;
 	}
 }
-
-/*#include <stdio.h>
-#include <fcntl.h>
-
-int	main(void)
-{
-	int	fd;
-
-	fd = open("test.txt", O_CREAT | O_TRUNC | O_WRONLY);
-	if (fd == -1)
-		return (1);
-	printf("fd = %d\n", fd);
-	ft_putstr_fd("Hello World!\n", fd);
-	close(fd);
-	return (0);
-}*/

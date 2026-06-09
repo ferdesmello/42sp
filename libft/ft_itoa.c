@@ -6,7 +6,7 @@
 /*   By: ferde-so <ferde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/29 19:38:55 by ferde-so          #+#    #+#             */
-/*   Updated: 2026/06/04 00:01:02 by ferde-so         ###   ########.fr       */
+/*   Updated: 2026/06/09 03:03:10 by ferde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,21 +59,3 @@ char	*ft_itoa(int n)
 	}
 	return (str);
 }
-
-/*#include <stdio.h>
-
-int	main(void)
-{
-	printf("%d\n", 0);
-	printf("%s\n", ft_itoa(0));
-	printf("\n%d\n", 1);
-	printf("%s\n", ft_itoa(1));
-	printf("\n%d\n", 2147483647);
-	printf("%s\n", ft_itoa(2147483647));
-	printf("\n%d\n", -2147483647);
-	printf("%s\n", ft_itoa(-2147483647));
-	printf("\n%d\n", 500);
-	printf("%s\n", ft_itoa(500));
-
-	return (0);
-}*/

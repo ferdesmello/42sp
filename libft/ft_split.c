@@ -6,7 +6,7 @@
 /*   By: ferde-so <ferde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/29 17:27:51 by ferde-so          #+#    #+#             */
-/*   Updated: 2026/06/03 14:46:14 by ferde-so         ###   ########.fr       */
+/*   Updated: 2026/06/09 03:05:43 by ferde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,41 +76,3 @@ char	**ft_split(char const *s, char c)
 	splitted[index] = 0;
 	return (splitted);
 }
-
-/*#include <stdio.h>
-
-int main(void)
-{
-	int i;
-	int size;
-    char text[] = "abracadabra";
-	char **splitted;
-	
-	char c1 = 'b';
-	printf("'%s'. '%c'\n", text, c1);
-	splitted = ft_split(text, c1);
-	size = ft_count_pieces(text, c1);
-	i = 0;
-	while (i < size)
-	{
-		printf("'%s'\n", splitted[i]);
-		free (splitted[i]);
-		i++;
-	}
-	free (splitted);
-
-	char c2 = 'a';
-	printf("'%s'. '%c'\n", text, c2);
-	splitted = ft_split(text, c2);
-	size = ft_count_pieces(text, c2);
-	i = 0;
-	while (i < size)
-	{
-		printf("'%s'\n", splitted[i]);
-		free (splitted[i]);
-		i++;
-	}
-	free (splitted);
-	
-    return (0);
-}*/

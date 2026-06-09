@@ -6,59 +6,21 @@
 /*   By: ferde-so <ferde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/25 10:44:53 by ferde-so          #+#    #+#             */
-/*   Updated: 2026/06/03 14:43:46 by ferde-so         ###   ########.fr       */
+/*   Updated: 2026/06/09 03:58:34 by ferde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memset(void *dest, int c, size_t n)
+void	*ft_memset(void *s, int c, size_t n)
 {
-	size_t			i;
+	size_t	i;
 
 	i = 0;
 	while (i < n)
 	{
-		((unsigned char *)dest)[i] = (unsigned char)c;
+		((unsigned char *)s)[i] = (unsigned char)c;
 		i++;
 	}
-	return (dest);
+	return (s);
 }
-
-/*unsigned int	ft_strlen(char *str)
-{
-	unsigned int	len;
-
-	len = 0;
-	while (str[len] != '\0')
-		len++;
-	return (len);
-}
-
-#include <string.h>
-#include <stdio.h>
-
-// ‘size_t’ is defined in header ‘<stddef.h>’
-int main(void)
-{
-	char	string1[] = "abcdefghijklmnopqrstuvwxyz";
-	char	string2[] = "abcdefghijklmnopqrstuvwxyz";
-	char	string3[] = "abcdefghijklmnopqrstuvwxyz";
-	char	string4[] = "abcdefghijklmnopqrstuvwxyz";
-
-	printf("'%s'\n", string1);
-	memset(string1, 0, ft_strlen(string1)*sizeof(char));
-	printf("'%s'\n", string1);
-	printf("'%s'\n", string2);
-	ft_memset(string2, 0, ft_strlen(string2)*sizeof(char));
-	printf("'%s'\n\n", string2);
-	
-	printf("'%s'\n", string3);
-	memset(string3 + 5, 'a', ft_strlen(string3)*sizeof(char));
-	printf("'%s'\n", string3);
-	printf("'%s'\n", string4);
-	ft_memset(string4 + 5, 'a', ft_strlen(string4)*sizeof(char));
-	printf("'%s'\n\n", string4);
-	
-	return 0;
-}*/

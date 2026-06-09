@@ -6,17 +6,11 @@
 /*   By: ferde-so <ferde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/01 14:16:29 by ferde-so          #+#    #+#             */
-/*   Updated: 2026/06/03 14:43:31 by ferde-so         ###   ########.fr       */
+/*   Updated: 2026/06/09 03:04:36 by ferde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-/*typedef struct s_list
-{
-	void			*content;
-	struct s_list	*next;
-}	t_list;*/
 
 t_list	*ft_lstnew(void *content)
 {
@@ -29,29 +23,3 @@ t_list	*ft_lstnew(void *content)
 	new_tlist->next = 0;
 	return (new_tlist);
 }
-
-/*#include <stdio.h>
-
-int	main(void)
-{
-	t_list *head;
-	t_list *second;
-	t_list *temp;
-	int number;
-
-	number = 42;
-	head = ft_lstnew(&number);
-	second = ft_lstnew("Hello!");
-	head->next = second;
-	
-	printf("%d\n", *(int *)(head->content));
-	printf("%s\n", (char *)(head->next->content));
-	
-	while (head != 0)
-	{
-		temp = head;
-		head = head->next;
-		free(temp);
-	}
-	return (0);
-}*/

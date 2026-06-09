@@ -6,7 +6,7 @@
 /*   By: ferde-so <ferde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/29 14:15:50 by ferde-so          #+#    #+#             */
-/*   Updated: 2026/06/03 14:45:33 by ferde-so         ###   ########.fr       */
+/*   Updated: 2026/06/09 03:06:44 by ferde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,25 +77,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 	ft_strlcpy(new_s, &s1[start], end - start + 1);
 	return (new_s);
 }
-
-/*#include <stdio.h>
-
-int main(void) {
-    char text1[] = "...!!! Hello, World !!!...";
-	char set1[] = ".! ";
-	char *s_trim1;
-    printf("Original: '%s'\n", text1);
-	s_trim1 = ft_strtrim(text1, set1);
-    printf("Trimmed : '%s'\n", s_trim1);
-	free (s_trim1);
-
-    char text2[] = "xyz_Data_xyz";
-	char set2[] = "xyz_";
-	char *s_trim2;
-    printf("Original: '%s'\n", text2);
-	s_trim2 = ft_strtrim(text2, set2);
-    printf("Trimmed : '%s'\n", s_trim2);
-	free (s_trim2);
-	
-    return (0);
-}*/

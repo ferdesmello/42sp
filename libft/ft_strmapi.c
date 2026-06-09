@@ -6,7 +6,7 @@
 /*   By: ferde-so <ferde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/01 14:06:22 by ferde-so          #+#    #+#             */
-/*   Updated: 2026/06/04 00:09:16 by ferde-so         ###   ########.fr       */
+/*   Updated: 2026/06/09 03:06:27 by ferde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,14 +58,3 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	new_s[i] = '\0';
 	return (new_s);
 }
-
-/*int main(void)
-{
-	char *array;
-	//char *new_array;
-
-	array = (char[]){'a', 'a', 'a', 'a', 'a'};
-	ft_strmapi(array, &test);
-
-	return (0);
-}*/
