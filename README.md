@@ -1,2 +1,32 @@
 # 42sp
-Code projects for the 42sp common core.
+List of repositories for the code projects developed for the 42sp common core.
+
+## 42Cursus-WarmUp-SP
+
+* [p2p_101](https://github.com/ferdesmello/p2p_101)
+
+Introduction to the concept of Nonviolent Communication (NVC) and learning how to conduct evaluations.
+
+* [Psicine Reloaded](https://github.com/ferdesmello/piscine_reloaded)
+
+Piscine Reloaded is a compilation of the best exercises done during the C piscine course to refresh the memory on all the fundamentals of the C programming language.
+
+## Rank 00
+
+* [libft](https://github.com/ferdesmello/libft)
+
+libft is a custom implementation of a selection of C standard library functions, built to deepen the student's knowledge of pointers, memory management, and string manipulation in C.
+
+## Rank 01
+
+* [printf](https://github.com/ferdesmello/ft_printf)
+
+Recode of C's printf.
+
+* Get next line
+
+* Push swap
+
+## Rank 02
+
+
