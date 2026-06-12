@@ -6,7 +6,7 @@
 /*   By: ferde-so <ferde-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/01 14:16:29 by ferde-so          #+#    #+#             */
-/*   Updated: 2026/06/09 03:04:36 by ferde-so         ###   ########.fr       */
+/*   Updated: 2026/06/11 22:26:13 by ferde-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,6 @@ t_list	*ft_lstnew(void *content)
 	if (new_tlist == 0)
 		return (0);
 	new_tlist->content = content;
-	new_tlist->next = 0;
+	new_tlist->next = NULL;
 	return (new_tlist);
 }
