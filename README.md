@@ -21,9 +21,11 @@ libft is a custom implementation of a selection of C standard library functions,
 
 * [printf](https://github.com/ferdesmello/ft_printf)
 
-Recode of C's printf.
+Recode of (a simpler version of) C's printf.
 
-* Get next line
+* [Get next line](https://github.com/ferdesmello/get_next_line)
+
+A function that returns a line read from a file descriptor.
 
 * Push swap
 
