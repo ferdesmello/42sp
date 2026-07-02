@@ -19,15 +19,15 @@ libft is a custom implementation of a selection of C standard library functions,
 
 ## Rank 01
 
-* [printf](https://github.com/ferdesmello/ft_printf)
+* [ft_printf](https://github.com/ferdesmello/ft_printf)
 
 Recode of (a simpler version of) C's printf.
 
-* [Get next line](https://github.com/ferdesmello/get_next_line)
+* [get next line](https://github.com/ferdesmello/get_next_line)
 
 A function that returns a line read from a file descriptor.
 
-* Push swap
+* [push swap](https://github.com/ferdesmello/push_swap)
 
 ## Rank 02
 
