@@ -27,7 +27,9 @@ Recode of (a simpler version of) C's printf.
 
 A function that returns a line read from a file descriptor.
 
-* [push swap](https://github.com/ferdesmello/push_swap)
+* [push swap](https://github.com/ferdesmello/push-swap)
+
+A program that sorts a stack (list of numbers) using only push-swap-rotation operations.
 
 ## Rank 02
 
