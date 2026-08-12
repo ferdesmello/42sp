@@ -33,4 +33,12 @@ A program that sorts a stack (list of numbers) using only push-swap-rotation ope
 
 ## Rank 02
 
+* [python modules 01]()
+
+* [python modules 02]()
+
+* [born_to_be_root]()
+ 
+* [a-maze-ing]()
+
 
