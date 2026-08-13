@@ -35,8 +35,8 @@ A program that sorts a stack (list of numbers) using only push-swap-rotation ope
 
 * [python modules](https://github.com/ferdesmello/python-modules)
 
-* [born_to_be_root]()
+* [Born2beRoot]()
  
-* [a-maze-ing]()
+* [A-Maze-ing]()
 
 
