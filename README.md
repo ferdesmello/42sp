@@ -33,9 +33,7 @@ A program that sorts a stack (list of numbers) using only push-swap-rotation ope
 
 ## Rank 02
 
-* [python modules 01]()
-
-* [python modules 02]()
+* [python modules](https://github.com/ferdesmello/python-modules)
 
 * [born_to_be_root]()
  
