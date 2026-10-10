@@ -39,7 +39,7 @@ Introduction to Python programming.
 
 * [Born2beRoot]()
  
-* [A-Maze-ing](https://github.com/ferdesmello/A-Maze-ing)
+* [A-Maze-ing](https://github.com/ferdesmello/a-maze-ing)
 
 A maze generator and maze solver.
 
