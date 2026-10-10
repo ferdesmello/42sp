@@ -41,4 +41,6 @@ Introduction to Python programming.
  
 * [A-Maze-ing](https://github.com/ferdesmello/A-Maze-ing)
 
+A maze generator and maze solver.
+
 
