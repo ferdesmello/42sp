@@ -39,6 +39,6 @@ Introduction to Python programming.
 
 * [Born2beRoot]()
  
-* [A-Maze-ing]()
+* [A-Maze-ing](https://github.com/ferdesmello/A-Maze-ing)
 
 
